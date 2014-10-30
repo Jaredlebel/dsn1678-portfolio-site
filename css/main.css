@@ -34,7 +34,13 @@ html {
 
 nav {
     position: fixed;
-    background-color: #fff;
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.48) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.48))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7affffff',GradientType=0 ); /* IE6-9 */
     z-index: 9000;
     width: 100%;
 }
@@ -46,8 +52,13 @@ ul {
 
 li {
     display: inline-block;
-    padding: 0.2em 3em 0.2em 3em;
+    padding: 0.1em 4em 0.1em 4em;
     vertical-align: middle;
+}
+
+ul li a{
+    text-decoration: none;
+    list-style-type: none;
 }
 
 body  {
@@ -57,8 +68,27 @@ header {
     
 }
 
-h1, h2 {
-   
+h1 {
+   font-size: 5em;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    padding: 1em 0 0.5em 0;
+    line-height: 1.2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+.p-big {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 3em;
 }
 
 .flex-img {
@@ -96,11 +126,6 @@ a:active {
     background: #000;
 }
 
-ul li a{
-    text-decoration: none;
-    list-style-type: none;
-}
-
 .banner {
     position: relative;
 }
@@ -108,17 +133,22 @@ ul li a{
 .banner img {
     display: block;
     width: 100%;
-    max-width: 1800px;
+    max-width: 1920px;
     margin: 0 auto;
 }
 
 .banner h1 {
     position: absolute;
     text-align: center;
-    bottom: 0;
-    left: 0;
+    color: #fff;
+    top:45%;
     right: 0;
-    color: white;
+    left: 0;
+}
+
+.about {
+    text-align: center;
+    margin: 4rem 15em 4rem 15rem;
 }
 
 .folio {
@@ -127,7 +157,6 @@ ul li a{
 }
 
 .folio-info {
-    border-radius: 180%;
     text-align: center;
     padding: 1em;
     position: absolute;
@@ -135,12 +164,13 @@ ul li a{
     width: 100%;
     top: 100%;
     bottom: 0;
-    background-color: #ffc400;
-    -webkit-transition: all 500ms ease-in-out;
-    transition: all 500ms ease-in-out;
+    opacity: 0;
+    background-color: #000;
+    -webkit-transition: all 1s ease;
 }
 
 .folio:hover .folio-info {
-    top: 82%;
+    top: 0%;
+    opacity: 1;
 }
 
