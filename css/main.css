@@ -74,14 +74,14 @@ h1 {
     text-transform: uppercase;
 }
 
-h2, .quote {
+h2 {
     font-size: 3em;
     text-align: center;
     line-height: 1.1em;
     text-transform: uppercase;
 }
 
-h3, {
+h3 {
     font-size: 1.5em;
     line-height: 1.4em;
     text-transform: uppercase;
@@ -154,7 +154,7 @@ a:active {
     margin: 0 auto;
 }
 
-.banner h1 {
+.banner h2 {
     position: absolute;
     text-align: center;
     color: #fff;
@@ -191,13 +191,13 @@ a:active {
     opacity: 1;
 }
 
-.quote-con {
-    position: relative;
+.contact {
+    position: absolute;
     font-size: 2em;
     line-height: 1.2em;
 }
 
-.quote-con p {
+.quote-con {
     position: absolute;
     text-align: left;
     color: #fff;
@@ -207,6 +207,7 @@ a:active {
     text-shadow: rgba(0, 0, 0, 0.6) 0 2px 2px;
 }
 
-.contact {
-    
+.quote {
+    font-size: 2em;
+    text-align: center;
 }
