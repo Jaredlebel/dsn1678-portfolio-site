@@ -33,27 +33,22 @@ html {
 }
 
 header {
+    text-transform: uppercase;
     position: fixed;
-    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.48) 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0.48))); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* IE10+ */
-    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.48) 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#7affffff',GradientType=0 ); /* IE6-9 */
     z-index: 9000;
     width: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     margin: 0 auto;
-    text-align: center;
-    vertical-align: middle;
+    text-align: center; 
 }
 
 nav ul li {
-    display: inline-block;
-    padding: em 0 0 0;
+    display: block;
+    padding: 0.2em;
     vertical-align: middle;
 }
 
@@ -65,9 +60,9 @@ nav ul li a{
 /*Toggle Navigation*/
 
 .hide-text {
-text-indent: 100%;
-white-space: nowrap;
-overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .nav-btn,
@@ -75,18 +70,15 @@ overflow: hidden;
 .nav-btn:visited{
 	display: block;
 	height: 40px;
-	width: 60px;
-	position: absolute;
-	top: 10px;	
-	right: 5%;
+	width: 40px;
+    margin: 0 auto;
 	background: #9da74e url('../images/nav-icon.svg') no-repeat center center;
-	/* background-color || background-image || background-repeat || background-position*/
 }
 
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active{
-	border-radius: 360%;
+	background-color: #fff;
 }
 
 .nav a, 
@@ -98,7 +90,6 @@ overflow: hidden;
 	color: #9da74e;
 	text-decoration: none;
 	border-top: 1px solid #fff;
-	/* border-width || border-style || border-color */
 }
 
 .nav a:hover,
@@ -118,6 +109,14 @@ overflow: hidden;
 }
 	
 @media only screen and (min-width: 35em) {
+    
+    header {
+    position: fixed;
+    background: #fff;
+    z-index: 9000;
+    width: 100%;
+    padding: 0.5em;
+    }
 	
 	.nav {
 		overflow: auto;	
@@ -177,11 +176,22 @@ h5 {
 
 p {
     font-size: 1.2em;
-    padding: 1em 0 1em 0;
+    padding: 0.5em 0 0.5em 0;
 }
 
 .p-big {
     font-size: 1.6em;
+    line-height: 1.4em;
+}
+
+@media only screen and (max-width: 35em) {
+    
+    h1 {
+        font-size: 3em;
+        line-height: 1em;
+        text-transform: uppercase;
+    }
+	
 }
 
 .flex-img {
@@ -241,7 +251,16 @@ a:active {
 
 .about {
     text-align: center;
-    margin: 4rem 5% 4rem 5%;
+    margin: 4rem 10% 4rem 10%;
+}
+
+.about-img {
+    max-width: 70%;
+    padding: 2em;
+}
+
+.replace-title {
+    
 }
 
 .folio {
@@ -268,22 +287,32 @@ a:active {
 }
 
 .contact {
-    position: absolute;
-    font-size: 2em;
+    background-color: #000;
     line-height: 1.2em;
+    padding: 3em;
 }
 
-.quote-con {
-    position: absolute;
-    text-align: left;
+.contact p {
     color: #fff;
-    top: 0;
-    right: 0;
-    left: 0;
-    text-shadow: rgba(0, 0, 0, 0.6) 0 2px 2px;
+    text-align: center;
+    line-height: 1.3em;
+    margin: 0 10% 0 10%;
+    
+}
+
+.contact ul {
+    text-align: center;
+    padding: 1em;
+}
+
+.contact ul li {
+    display: inline-block;
+    padding: 0 0.2em;
 }
 
 .quote {
-    font-size: 2em;
+    background-image: url(http://lorempixel.com/g/1800/400);
+    padding: 1em;
+    font-size: 3em;
     text-align: center;
 }
