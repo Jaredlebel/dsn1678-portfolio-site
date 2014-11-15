@@ -5,7 +5,8 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-    background: url(...images/txture.jpg) no-repeat;
+    background: url(../images/texture.jpg) no-repeat center center;
+    background-size: cover;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -353,15 +354,17 @@ a:active {
 
 .contact {
     background-color: #fff;
+    background: url(../images/contact.jpg) no-repeat center center;
+    background-size: cover;
     line-height: 1.2em;
-    padding: 3em;
+    padding: 3em 0 3em 0;
 }
 
 .contact p {
     color: #000;
     text-align: center;
     line-height: 1.3em;
-    margin: 0 10% 0 10%;
+    padding: 0 0 0 0;
     
 }
 
@@ -376,8 +379,7 @@ a:active {
 }
 
 .quote {
-    background-image: url(http://lorempixel.com/g/1800/300);
-    
+    background-image: url(http://lorempixel.com/g/1800/400);
     font-size: 3em;
     text-align: center;
 }
@@ -385,8 +387,8 @@ a:active {
 .quote p {
     padding: 2em;
     color: #fff;
-    font-weight: 800;
-    background-color:  rgba(42, 39, 14, 0.9);
+    font-weight: 200;
+    background-color:  rgba(0, 0, 0, 0.8);
 }
 
 .piece {
