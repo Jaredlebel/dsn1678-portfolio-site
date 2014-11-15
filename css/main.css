@@ -390,6 +390,9 @@ a:active {
     padding-top: 4.5em;
 }
 
+.piece-nav {
+    width: 50px;
+}
 .piece-text {
     padding: 2em 4em 2em 4em;
 }
@@ -408,10 +411,10 @@ a:active {
     .piece-text-border {
         text-align: center;
         border-left: none;
-        padding: 0 2em 2em 2em;
+        padding: 0 0 2em 2em;
     }
     
     .piece-text-border img {
-        padding: 1.1em;
+        padding: 1em;
     }
 }
