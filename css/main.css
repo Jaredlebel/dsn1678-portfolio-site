@@ -374,6 +374,7 @@ a:active {
 }
 
 .contact ul li {
+    width: 60px;
     display: inline-block;
     padding: 0 0.2em;
 }
