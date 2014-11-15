@@ -5,11 +5,12 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
+    background: url(images/txture.jpg) no-repeat center center;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     
-    font: normal 100%/1.5 sans-serif;
+    font: font-family: 'Merriweather', serif;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -53,6 +54,22 @@ nav ul li {
 }
 
 nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0 auto;
+    text-align: center; 
+}
+
+ul li {
+    display: block;
+    padding: 0.2em;
+    vertical-align: middle;
+}
+
+ul li a{
     text-decoration: none;
     list-style-type: none;
 }
@@ -140,41 +157,43 @@ nav ul li a{
 }
 /* toggle navigation ends*/
 
-body  {
-}
-
 h1 {
-   font-size: 5em;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 5em;
     line-height: 1em;
     text-transform: uppercase;
 }
 
 h2 {
+    font-family: 'Helvetica', sans-serif;
     font-size: 3em;
-    text-align: center;
-    line-height: 1.1em;
+    line-height: 1.5em;
     text-transform: uppercase;
 }
 
 h3 {
+    font-family: 'Helvetica', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 h4 {
+    font-family: 'Helvetica', sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 h5 {
+    font-family: 'Helvetica', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
     text-transform: uppercase;
 }
 
 p {
+    font-weight: 400;
     font-size: 1.2em;
     padding: 0.5em 0 0.5em 0;
 }
@@ -315,4 +334,17 @@ a:active {
     padding: 1em;
     font-size: 3em;
     text-align: center;
+}
+
+.piece {
+    padding-top: 4em;
+}
+
+.piece-text {
+    padding: 2em 4em 2em 4em;
+}
+
+.piece-text-border {
+    border-left: solid;
+    padding: 2em 4em 2em 0;
 }
