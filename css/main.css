@@ -172,10 +172,13 @@ ul li a{
 }
 
 .logo {
+    background-color: #a49841;
     position: relative;
+    padding: 0.3em;
     top: -0.6em;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
+    border-radius: 30px;
 }
 
 h1 {
@@ -349,13 +352,13 @@ a:active {
 }
 
 .contact {
-    background-color: #000;
+    background-color: #fff;
     line-height: 1.2em;
     padding: 3em;
 }
 
 .contact p {
-    color: #fff;
+    color: #000;
     text-align: center;
     line-height: 1.3em;
     margin: 0 10% 0 10%;
@@ -395,11 +398,13 @@ a:active {
     margin: 0  0.5em 0.5em 0;
 }
 .piece-text {
+    color: #fff;
+    background-color: #000;
     padding: 2em 4em 2em 4em;
 }
 
 .piece-text-border {
-    border-left: solid;
+    border-bottom: solid;
     padding: 2em 4em 2em 2em;
 }
 
