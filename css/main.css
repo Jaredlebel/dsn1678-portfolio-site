@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-    background: url(images/txture.jpg) no-repeat center center;
+    background: url(...images/txture.jpg) no-repeat;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -40,38 +40,7 @@ header {
     position: fixed;
     z-index: 9000;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-nav ul {
-    margin: 0 auto;
-    text-align: center; 
-}
-
-nav ul li {
-    display: block;
-    padding: 0.3em;
-    vertical-align: middle;
-}
-
-nav ul li a{
-    text-decoration: none;
-    list-style-type: none;
-}
-
-ul {
-    margin: 0 auto;
-    text-align: center; 
-}
-
-ul li {
-    display: block;
-    padding: 0.2em;
-}
-
-ul li a{
-    text-decoration: none;
-    list-style-type: none;
+    background-color: rgba(255, 255, 255, 1);
 }
 
 /*Toggle Navigation*/
@@ -123,12 +92,28 @@ ul li a{
 .nav-top[data-state="expanded"]{
     display: block;
 }
+
+nav ul {
+    margin: 0 auto;
+    text-align: center; 
+}
+
+nav ul li {
+    display: block;
+    padding: 0.6em 0 0 0;
+    vertical-align: middle;
+}
+
+nav ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
 	
 @media only screen and (min-width: 35em) {
     
     header {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 1);
     z-index: 9000;
     width: 100%;
     padding: 0.5em;
@@ -157,6 +142,42 @@ ul li a{
 }
 /* toggle navigation ends*/
 
+ul {
+    margin: 0 auto;
+    text-align: center; 
+}
+
+ul li {
+    display: block;
+    padding: 0.2em;
+}
+
+ul li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.facts {
+    padding: 1em 0 1em 0;
+}
+
+.facts ul {
+    margin: 0 auto;
+    text-align: left; 
+}
+
+.facts ul li {
+    display: inline-block;
+    padding: 1em 3em 1em 0;
+}
+
+.logo {
+    position: relative;
+    top: -0.6em;
+    width: 40px;
+    height: 40px;
+}
+
 h1 {
     font-family: 'Helvetica', sans-serif;
     font-size: 4em;
@@ -168,7 +189,7 @@ h1 {
 h2 {
     font-family: 'Helvetica', sans-serif;
     font-size: 2em;
-    line-height: 1.5em;
+    line-height: 1.3em;
     font-weight: 200;
     text-transform: uppercase;
 }
@@ -205,8 +226,9 @@ p {
 }
 
 .p-big {
-    font-size: 1.6em;
-    line-height: 1.4em;
+    font-weight: 300;
+    font-size: 1.4em;
+    line-height: 1.6em;
 }
 
 @media only screen and (max-width: 55em) {
@@ -266,23 +288,30 @@ a:active {
     margin: 0 auto;
 }
 
-.banner h2 {
+.banner-text {
     position: absolute;
-    text-align: center;
-    color: #fff;
-    top:45%;
-    right: 0;
+    top: 38%;
     left: 0;
+    right: 0;
+    background: rgba(164, 152, 65, 0.3);
+    padding: 3em;
+    margin: 0 2em 0 2em;;
+}
+.banner-text h1 {
+    text-align: center;
+    font-size: 6em;
+    color: #fff;
+    font-weight: 200;
+    letter-spacing: 0.6em;
 }
 
 .about {
-    text-align: center;
     margin: 4rem 12% 4rem 12%;
 }
 
 .about-img {
     max-width: 50%;
-    padding: 2em;
+    padding: 0 0 0 2em;
 }
 
 .replace-title {
@@ -345,13 +374,16 @@ a:active {
 
 .quote {
     background-image: url(http://lorempixel.com/g/1800/300);
-    padding: 1em;
+    
     font-size: 3em;
     text-align: center;
 }
 
 .quote p {
-    color: #a49841;
+    padding: 2em;
+    color: #fff;
+    font-weight: 800;
+    background-color:  rgba(42, 39, 14, 0.9);
 }
 
 .piece {
