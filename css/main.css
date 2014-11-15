@@ -10,7 +10,7 @@ html {
     margin: 0;
     padding: 0;
     
-    font: font-family: 'Merriweather', serif;
+    font-family: 'Merriweather', serif;
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
@@ -34,6 +34,8 @@ html {
 }
 
 header {
+    font-family: 'helvetica' sans-serif;
+    font-weight: 300;
     text-transform: uppercase;
     position: fixed;
     z-index: 9000;
@@ -49,7 +51,7 @@ nav ul {
 
 nav ul li {
     display: block;
-    padding: 0.2em;
+    padding: 0.3em;
     vertical-align: middle;
 }
 
@@ -66,7 +68,6 @@ ul {
 ul li {
     display: block;
     padding: 0.2em;
-    vertical-align: middle;
 }
 
 ul li a{
@@ -89,13 +90,13 @@ ul li a{
 	height: 40px;
 	width: 40px;
     margin: 0 auto;
-	background: #9da74e url('../images/nav-icon.svg') no-repeat center center;
+	background: #a49841 url('../images/nav-icon.svg') no-repeat center center;
 }
 
 .nav-btn:hover,
 .nav-btn:focus,
 .nav-btn:active{
-	background-color: #fff;
+	background-color: #b7ba98;
 }
 
 .nav a, 
@@ -104,7 +105,7 @@ ul li a{
 	display: block;
     width: 100%;
     text-align:center;
-	color: #9da74e;
+	color: #000;
 	text-decoration: none;
 	border-top: 1px solid #fff;
 }
@@ -112,7 +113,7 @@ ul li a{
 .nav a:hover,
 .nav a:focus,
 .nav a:active{
-	color: #000;
+	color: #a49841;
 }
 
 /* Toggle Nav*/
@@ -159,15 +160,17 @@ ul li a{
 
 h1 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 5em;
+    font-size: 4em;
     line-height: 1em;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
 h2 {
     font-family: 'Helvetica', sans-serif;
-    font-size: 3em;
+    font-size: 2em;
     line-height: 1.5em;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
@@ -175,6 +178,7 @@ h3 {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
@@ -182,6 +186,7 @@ h4 {
     font-family: 'Helvetica', sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
@@ -189,12 +194,14 @@ h5 {
     font-family: 'Helvetica', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
+    font-weight: 200;
     text-transform: uppercase;
 }
 
 p {
-    font-weight: 400;
-    font-size: 1.2em;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.6em;
     padding: 0.5em 0 0.5em 0;
 }
 
@@ -203,7 +210,7 @@ p {
     line-height: 1.4em;
 }
 
-@media only screen and (max-width: 35em) {
+@media only screen and (max-width: 55em) {
     
     h1 {
         font-size: 3em;
@@ -346,5 +353,22 @@ a:active {
 
 .piece-text-border {
     border-left: solid;
-    padding: 2em 4em 2em 0;
+    padding: 2em 4em 2em 2em;
+}
+
+@media only screen and (max-width: 35em) {
+    
+    .piece-text {
+        padding: 2em 2em 2em 2em;
+    }
+
+    .piece-text-border {
+        text-align: center;
+        border-left: none;
+        padding: 0 2em 2em 2em;
+    }
+    
+    .piece-text-border img {
+        padding: 1.1em;
+    }
 }
