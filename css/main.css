@@ -158,6 +158,18 @@ ul li a{
     list-style-type: none;
 }
 
+hr {
+    border: 0;
+    height: 2px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    background-color: #a49841;
+    width: 30%;
+    margin: auto;
+}
+
 .facts {
     padding: 1em 0 1em 0;
 }
@@ -263,7 +275,7 @@ a:link {
 
 a:hover {
     color: #848484;
-    transition: ease-in-out 300ms;
+    transition: ease-in-out 200ms;
 }
 
 a:active {
@@ -294,19 +306,19 @@ a:active {
 
 .banner-text {
     position: absolute;
-    top: 38%;
+    top: 40%;
     left: 0;
     right: 0;
     background: rgba(164, 152, 65, 0.3);
-    padding: 3em;
-    margin: 0 2em 0 2em;;
+    padding: 1em;
+    margin: 0 30% 0 30%;
+    border-radius: 90px;
 }
 .banner-text h1 {
     text-align: center;
-    font-size: 6em;
+    font-size: 5em;
     color: #fff;
     font-weight: 200;
-    letter-spacing: 0.6em;
 }
 
 .about {
@@ -336,20 +348,37 @@ a:active {
 
 .folio-info {
     text-align: center;
-    padding: 1em;
+    padding: 5em 0 0 0;
     position: absolute;
     height: 100%;
     width: 100%;
     top: 100%;
     bottom: 0;
     opacity: 0;
-    background-color: #000;
-    -webkit-transition: all 1s ease;
+    color: #a49841;
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-transition: all 300ms ease;
 }
 
 .folio:hover .folio-info {
     top: 0%;
     opacity: 1;
+}
+
+.folio h2 {
+    color: #a49841; 
+    font-size: 1.7em;
+    font-weight: 400;
+    margin: 0 2.5em 0 2.5em;
+}
+
+.folio ul li {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    padding: 0.5em;
+    
 }
 
 .contact {
