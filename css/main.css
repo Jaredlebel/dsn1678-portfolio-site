@@ -40,8 +40,7 @@ header {
     position: fixed;
     z-index: 9000;
     width: 100%;
-    background-color: #fff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 nav ul {
@@ -107,7 +106,6 @@ ul li a{
     text-align:center;
 	color: #000;
 	text-decoration: none;
-	border-top: 1px solid #fff;
 }
 
 .nav a:hover,
@@ -130,7 +128,7 @@ ul li a{
     
     header {
     position: fixed;
-    background: #fff;
+    background-color: rgba(255, 255, 255, 0.9);
     z-index: 9000;
     width: 100%;
     padding: 0.5em;
@@ -143,6 +141,7 @@ ul li a{
 	.nav li {
 		float: left;
 		width: 20%;	
+        vertical-align: middle;
 	}
 	
 	.nav-btn,
@@ -256,6 +255,7 @@ a:active {
 }
 
 .banner {
+    padding-top: 4em;
     position: relative;
 }
 
@@ -277,16 +277,23 @@ a:active {
 
 .about {
     text-align: center;
-    margin: 4rem 10% 4rem 10%;
+    margin: 4rem 12% 4rem 12%;
 }
 
 .about-img {
-    max-width: 70%;
+    max-width: 50%;
     padding: 2em;
 }
 
 .replace-title {
-    
+    height: 4em;
+    overflow: hidden;
+    top: 10em;
+}
+
+.replace-title:hover {
+    top: -10px;
+    color: red;
 }
 
 .folio {
@@ -337,14 +344,18 @@ a:active {
 }
 
 .quote {
-    background-image: url(http://lorempixel.com/g/1800/400);
+    background-image: url(http://lorempixel.com/g/1800/300);
     padding: 1em;
     font-size: 3em;
     text-align: center;
 }
 
+.quote p {
+    color: #a49841;
+}
+
 .piece {
-    padding-top: 4em;
+    padding-top: 4.5em;
 }
 
 .piece-text {
