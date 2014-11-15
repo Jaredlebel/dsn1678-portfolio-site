@@ -391,7 +391,8 @@ a:active {
 }
 
 .piece-nav {
-    width: 50px;
+    width: 40px;
+    margin: 0  0.5em 0.5em 0;
 }
 .piece-text {
     padding: 2em 4em 2em 4em;
