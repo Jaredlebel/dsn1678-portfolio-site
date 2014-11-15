@@ -380,7 +380,7 @@ a:active {
 }
 
 .quote {
-    background-image: url(http://lorempixel.com/g/1800/400);
+    background: url(../images/quotebg.jpg) no-repeat center center;
     font-size: 3em;
     text-align: center;
 }
@@ -389,7 +389,7 @@ a:active {
     padding: 2em;
     color: #fff;
     font-weight: 200;
-    background-color:  rgba(0, 0, 0, 0.8);
+    background-color:  rgba(23, 22, 19, 0.9);
 }
 
 .piece {
