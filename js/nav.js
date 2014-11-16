@@ -16,3 +16,11 @@
 		
 		}
 	});
+
+var $quoteSection = $('.quote-section');
+
+$win.on('scroll', function() {
+    var scrollPos = $win.scrollTop();
+    
+    $quoteSection.css('background-position', 'center ' + scrollPos / 2 + 'px');
+});

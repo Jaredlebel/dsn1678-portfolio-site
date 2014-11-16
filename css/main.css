@@ -35,7 +35,7 @@ html {
 }
 
 header {
-    font-family: 'helvetica' sans-serif;
+    font-family: 'edo' sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     position: fixed;
@@ -195,7 +195,7 @@ hr {
 }
 
 h1 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-size: 4em;
     line-height: 1em;
     font-weight: 200;
@@ -203,7 +203,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-size: 2em;
     line-height: 1.3em;
     font-weight: 200;
@@ -211,7 +211,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
     font-weight: 200;
@@ -219,7 +219,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
     font-weight: 200;
@@ -227,7 +227,7 @@ h4 {
 }
 
 h5 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Special Elite', sans-serif;
     font-size: 1em;
     line-height: 1.4em;
     font-weight: 200;
@@ -306,20 +306,51 @@ a:active {
 
 .banner-text {
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 0;
     right: 0;
-    background: rgba(164, 152, 65, 0.3);
-    padding: 1em;
-    margin: 0 30% 0 30%;
-    border-radius: 90px;
 }
+
 .banner-text h1 {
     text-align: center;
-    font-size: 5em;
+    font-size: 8em;
     color: #fff;
     font-weight: 200;
+    letter-spacing: 0.3em;
 }
+
+@media only screen and (max-width: 70em) {
+    
+    .banner-text {
+    top: 55%;
+    }
+    
+   .banner-text h1 {
+    font-size: 5em;
+   }
+} 
+
+@media only screen and (max-width: 50em) {
+    
+    .banner-text {
+    top: 55%;
+    }
+    
+   .banner-text h1 {
+    font-size: 4em;
+   }
+} 
+
+@media only screen and (max-width: 40em) {
+    
+    .banner-text {
+    top: 55%;
+    }
+    
+   .banner-text h1 {
+    font-size: 2.3em;
+   }
+} 
 
 .about {
     margin: 4rem 12% 4rem 12%;
@@ -421,26 +452,48 @@ a:active {
     background-color:  rgba(23, 22, 19, 0.9);
 }
 
+.quote-section {
+    background: transparent url(../images/contact.jpg) no-repeat center center;
+    background-size: cover;
+}
+
 .piece {
     padding-top: 4.5em;
 }
 
 .piece-nav {
-    width: 40px;
-    margin: 0  0.5em 0.5em 0;
+    text-align: center;
+    margin: 0  1em 1em 0;
 }
+
 .piece-text {
-    color: #fff;
-    background-color: #000;
+    color: #000;
+    background-color: #fff;
     padding: 2em 4em 2em 4em;
 }
 
 .piece-text-border {
-    border-bottom: solid;
+    background-color: #fff;
+    color: #000;
     padding: 2em 4em 2em 2em;
+    border-left: solid 2px #000;
 }
 
-@media only screen and (max-width: 35em) {
+.piece-text-border a {
+    color: #a49841;
+    border-bottom: solid 2px #a49841;
+}
+
+.piece-text-border a:hover {
+    border-bottom: solid 10px #a49841;
+    transition: ease-in-out 300ms;
+}
+
+.piece-text-border img {
+    width: 50px;
+}
+
+@media only screen and (max-width: 40em) {
     
     .piece-text {
         padding: 2em 2em 2em 2em;
@@ -449,10 +502,9 @@ a:active {
     .piece-text-border {
         text-align: center;
         border-left: none;
-        padding: 0 0 2em 2em;
     }
     
-    .piece-text-border img {
-        padding: 1em;
-    }
+    .piece-text-border ul {
+    text-align: center;
+}
 }
