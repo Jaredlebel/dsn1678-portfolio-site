@@ -379,7 +379,7 @@ p {
     line-height: 1.7em;
 }
 
-@media only screen and (max-width: 55em) {
+@media only screen and (max-width: 30em) {
     
     h1 {
         text-align: center;
@@ -453,7 +453,7 @@ a:active {
 }
 
 .banner {
-    padding-top: 4em;
+    padding-top: 5.75em;
     position: relative;
 }
 
@@ -466,7 +466,7 @@ a:active {
 .banner-text {
     padding: 0 20em 0 6em;
     position: absolute;
-    top: 35%;
+    top: 25%;
     left: 0;
     right: 0;
 }
@@ -509,7 +509,7 @@ a:active {
     }
     
    .banner-text h1 {
-        font-size: 3em;
+        font-size: 4em;
    }
 } 
 
