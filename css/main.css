@@ -715,7 +715,7 @@ a:active {
 .not-found-text {
     padding: 0 6em 0 6em;
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 0;
     right: 0;
 }
@@ -731,7 +731,7 @@ a:active {
 .not-found img {
     background-size: cover;
     margin: 0 auto;
-    width: 140%;
+    width: 100%;
 }
 
 .not-found-text h1 {
@@ -775,7 +775,7 @@ a:active {
     
     .not-found-text {
         padding: 0 3em 0 3em;
-        top: 10%;
+        top: 15%;
     }
     
    .not-found-text h1 {
