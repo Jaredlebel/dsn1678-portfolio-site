@@ -160,13 +160,13 @@ ul li a{
 
 hr {
     border: 0;
-    height: 2px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0)); 
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    height: 3px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,1), rgba(0,0,0,0), rgba(0,0,0,1));
     background-color: #a49841;
-    width: 30%;
+    width: 20%;
     margin: auto;
 }
 
@@ -181,24 +181,24 @@ hr {
 }
 
 .facts {
-    background-color: rgba(164, 152, 65, 0.2);
-    color: #a49841;
-    padding: 3em 15% 3em 15%;
+    background-color: rgba(164, 152, 65, 0.8);
+    color: #000;
+    padding: 6em 20% 6em 20%;
     text-align: center;
 }
 
 .facts ul {
-    color: #000;
-    margin: 0 auto; 
+    color: #fff;
+    margin: 1em 0 0 0; 
     text-align: center;
-    height: 7.3em;
+    height: 7.1em;
     overflow: auto;
 }
 
 .facts ul li {
     font-size: 3em;
-    display: inline-block;
-    padding: 1em 0 0 0;
+    display: block;
+    padding: 0.5em 0 0 0;
 }
 
 .logo {
@@ -371,17 +371,6 @@ a:active {
     padding: 0 0 0 2em;
 }
 
-.replace-title {
-    height: 4em;
-    overflow: hidden;
-    top: 10em;
-}
-
-.replace-title:hover {
-    top: -10px;
-    color: red;
-}
-
 .folio {
     position: relative;
     overflow: hidden;
@@ -389,25 +378,24 @@ a:active {
 
 .folio-info {
     text-align: center;
-    padding: 5em 0 0 0;
+    padding: 45% 0 50% 0;
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 100%;
+    top: ;
     bottom: 0;
     opacity: 0;
     color: #a49841;
     background-color: rgba(0, 0, 0, 1);
-    -webkit-transition: all 300ms ease;
+    -webkit-transition: all 400ms ease;
 }
 
 .folio:hover .folio-info {
-    top: 0%;
     opacity: 1;
 }
 
 .folio h2 {
-    color: #a49841; 
+    color: #fff; 
     font-size: 1.7em;
     font-weight: 400;
     margin: 0 2.5em 0 2.5em;
@@ -480,15 +468,16 @@ a:active {
     background-color: #fff;
     color: #000;
     padding: 6em 10em 6em 10em;
-    border-bottom: solid;
+    border-bottom: solid 2px;
+    border-right: solid 1px;
 }
 
 .piece-text-border {
     background-color: #fff;
     color: #000;
     padding: 6em 2em 6em 2em;
-    border-left: solid;
-    border-bottom: solid;
+    border-left: solid 1px;
+    border-bottom: solid 2px;
 }
 
 .piece-text-border a {
