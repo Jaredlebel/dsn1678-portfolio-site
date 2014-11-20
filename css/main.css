@@ -464,19 +464,38 @@ a:active {
 }
 
 .banner-text {
-    padding: 0 20em 0 6em;
+    padding: 0 6em 0 6em;
     position: absolute;
-    top: 25%;
+    top: 45%;
     left: 0;
     right: 0;
 }
 
 .banner-text h1 {
-    text-align: left;
+    text-align: center;
     line-height: 1em;
     font-size: 8em;
     color: #fff;
     font-weight: 200;
+}
+
+.ban-btn {
+    padding: 0.6em 0 0.5em 0;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    color: #a49841;
+    border: solid 3px #a49841;
+    width: 20%;
+    margin: 1em auto;
+    border-radius: 40px;
+}
+
+.ban-btn:hover {
+    background-color: #a49841;
+    color: #fff;
+    transition: all 400ms ease;
+    -webkit-transition: all 400ms ease;
 }
 
 @media only screen and (max-width: 70em) {
@@ -538,6 +557,7 @@ a:active {
     opacity: 0;
     color: #a49841;
     background-color: rgba(0, 0, 0, 1);
+    transition: all 400ms ease;
     -webkit-transition: all 400ms ease;
 }
 
