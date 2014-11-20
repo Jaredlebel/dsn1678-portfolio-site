@@ -708,7 +708,6 @@ a:active {
 .not-found {
     position: relative;
     text-align: center;
-    padding-top: 5.7em;
     position: relative;
     background-size: cover;
 }
@@ -716,7 +715,7 @@ a:active {
 .not-found-text {
     padding: 0 6em 0 6em;
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 0;
     right: 0;
 }
@@ -730,8 +729,9 @@ a:active {
 }
 
 .not-found img {
-    background-size: contain;
+    background-size: cover;
     margin: 0 auto;
+    width: 140%;
 }
 
 .not-found-text h1 {
@@ -745,7 +745,7 @@ a:active {
 @media only screen and (max-width: 60em) {
     
     .not-found-text {
-    top: 30%;
+    top: 20%;
     }
     
    .not-found-text h1 {
@@ -756,7 +756,7 @@ a:active {
 @media only screen and (max-width: 40em) {
     
     .not-found-text {
-    top: 30%;
+    top: 20%;
     }
     
     .not-found-text h1 {
@@ -775,7 +775,7 @@ a:active {
     
     .not-found-text {
         padding: 0 3em 0 3em;
-        top: 37%;
+        top: 10%;
     }
     
    .not-found-text h1 {
@@ -786,7 +786,7 @@ a:active {
         font-size: 1em;
         color: #fff;
         padding: 0.5em;
-        max-width: 70%;
+        max-width: 95%;
         margin: 0 auto;
     }
 } 
@@ -799,7 +799,7 @@ a:active {
     color: #a49841;
     border: solid 2px #a49841;
     width: 160px;
-    margin: 1em auto;
+    margin: 0 auto;
     border-radius: 40px;
 }
 
