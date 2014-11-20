@@ -315,14 +315,16 @@ a:active {
 }
 
 .banner-text {
+    padding: 0 20em 0 6em;
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 0;
     right: 0;
 }
 
 .banner-text h1 {
-    text-align: center;
+    text-align: left;
+    line-height: 1em;
     font-size: 8em;
     color: #fff;
     font-weight: 200;
@@ -332,7 +334,18 @@ a:active {
 @media only screen and (max-width: 70em) {
     
     .banner-text {
-    top: 55%;
+    top: 40%;
+    }
+    
+   .banner-text h1 {
+    font-size: 6em;
+   }
+} 
+
+@media only screen and (max-width: 50em) {
+    
+    .banner-text {
+    top: 40%;
     }
     
    .banner-text h1 {
@@ -340,25 +353,15 @@ a:active {
    }
 } 
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 42em) {
     
     .banner-text {
-    top: 55%;
+        padding: 0 20em 0 3em;
+        top: 55%;
     }
     
    .banner-text h1 {
-    font-size: 4em;
-   }
-} 
-
-@media only screen and (max-width: 40em) {
-    
-    .banner-text {
-    top: 55%;
-    }
-    
-   .banner-text h1 {
-    font-size: 2.3em;
+        font-size: 3em;
    }
 } 
 
