@@ -97,6 +97,7 @@ header {
 nav ul {
     margin: 0 auto;
     text-align: center; 
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 nav ul li {
@@ -113,11 +114,9 @@ nav ul li a{
 @media only screen and (min-width: 35em) {
     
     header {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 1);
-    z-index: 9000;
-    width: 100%;
-    padding: 0.5em;
+        position: fixed;
+        padding: 0.5em;
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);      
     }
 	
 	.nav {
@@ -183,22 +182,150 @@ hr {
 .facts {
     background-color: rgba(164, 152, 65, 0.8);
     color: #000;
-    padding: 6em 20% 6em 20%;
+    padding: 6em 0 6em 0;
     text-align: center;
 }
 
-.facts ul {
+.facts-list {
+    position: relative;
     color: #fff;
-    margin: 1em 0 0 0; 
+    height: 8em;
+    width: 60%;
+    margin: 0 auto;
     text-align: center;
-    height: 7.1em;
-    overflow: auto;
+    overflow: hidden;
 }
 
-.facts ul li {
-    font-size: 3em;
-    display: block;
-    padding: 0.5em 0 0 0;
+.facts-outside {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    height: 100%;
+    font-size: 2em;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    -webkit-animation: facts 500ms linear forwards;
+    animation: facts 500ms linear forwards;
+}
+
+.facts-outside:last-child {
+    padding: 0;
+}
+
+.facts-inside {
+    -webkit-animation: facts-2 300ms linear forwards;
+    animation: facts-2 300ms linear forwards;
+}
+
+@-webkit-keyframes facts {
+    from {
+        top: 8rem;}
+        
+    to {
+        top: 0rem}
+}
+
+@-webkit-keyframes facts-2 {
+    from {
+        -webkit-transform: translateY(0);
+    }
+    to {
+        -webkit-transform: translateY(-8rem)}
+}
+
+.facts-outside:nth-child(1) {
+    -webkit-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+}
+
+.facts-inside:nth-child(1) {
+    -webkit-animation-delay: 2500ms;
+    animation-delay: 2500ms;
+}
+
+.facts-inside:nth-child(2) {
+    -webkit-animation-delay: 4000ms;
+    animation-delay: 4000ms;
+}
+
+.facts-outside:nth-child(2) {
+    -webkit-animation-delay: 5500ms;
+    animation-delay: 5500ms;
+}
+
+.facts-inside:nth-child(2) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 8000ms;
+}
+
+.facts-outside:nth-child(3) {
+    -webkit-animation-delay: 9500ms;
+    animation-delay: 9500ms;
+}
+
+.facts-inside:nth-child(3) {
+    -webkit-animation-delay: 11000ms;
+    animation-delay: 11000ms;
+}
+
+.facts-outside:nth-child(4) {
+    -webkit-animation-delay: 12500ms;
+    animation-delay: 12500ms;
+}
+
+.facts-inside:nth-child(4) {
+    -webkit-animation-delay: 1400ms;
+    animation-delay: 1400ms;
+}
+
+/*
+@-webkit-keyframes facts {
+    from {
+        -webkit-transform: translateY(0rem);}
+        
+    to {
+        -webkit-transform: translateY(-6rem);}
+}
+
+@-webkit-keyframes facts-2 {
+    from {
+        -webkit-transform: translateY(-6rem);}
+        
+    to {
+        -webkit-transform: translateY(-12rem);}
+}
+
+@-webkit-keyframes facts-3 {
+    from {
+        -webkit-transform: translateY(-12rem);}
+        
+    to {
+        -webkit-transform: translateY(-18rem);}
+}
+
+@-webkit-keyframes facts-4 {
+    from {
+        -webkit-transform: translateY(-18rem);}
+        
+    to {
+        -webkit-transform: translateY(-24rem);}
+}
+*/
+@media only screen and (max-width: 55em) {
+    .facts {
+        padding: 5em 10% 3em 10%;
+    }
+    
+    .facts ul { 
+        height: 4em;
+        overflow: hidden;
+    }
+    
+    .facts ul li {
+        font-size: 2em;
+        padding: 0.5em 0 0.9em 0;
+    }
 }
 
 .logo {
@@ -211,29 +338,25 @@ hr {
 h1 {
     font-family: 'Special Elite', sans-serif;
     font-size: 3em;
-    line-height: 1.3em;
-    letter-spacing: 0.2em;
+    line-height: 1.4em;
 }
 
 h2 {
     font-family: 'Special Elite', sans-serif;
     font-size: 2em;
-    line-height: 1.3em;
-    letter-spacing: 0.2em;
+    line-height: 1.4em;
 }
 
 h3 {
     font-family: 'Special Elite', sans-serif;
     font-size: 1.5em;
     line-height: 1.4em;
-    letter-spacing: 0.2em;
 }
 
 h4 {
     font-family: 'Special Elite', sans-serif;
     font-size: 1.2em;
     line-height: 1.4em;
-    letter-spacing: 0.2em;
 }
 
 h5 {
@@ -241,7 +364,6 @@ h5 {
     font-size: 1em;
     line-height: 1.5em;
     color: #a49841;
-    letter-spacing: 0.2em;
 }
 
 p {
@@ -254,17 +376,45 @@ p {
 .p-big {
     font-weight: 300;
     font-size: 1.4em;
-    line-height: 1.6em;
+    line-height: 1.7em;
 }
 
 @media only screen and (max-width: 55em) {
     
     h1 {
-        font-size: 3em;
-        line-height: 1em;
-        text-transform: uppercase;
+        text-align: center;
+        font-size: 2em;
     }
 	
+    h2 {
+        text-align: center;
+        font-size: 1.8em;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    h4 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .p-big {
+        text-align: center;
+        font-size: 1.2em;
+    }
 }
 
 .flex-img {
@@ -310,7 +460,6 @@ a:active {
 .banner img {
     display: block;
     width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
 }
 
@@ -328,7 +477,6 @@ a:active {
     font-size: 8em;
     color: #fff;
     font-weight: 200;
-    letter-spacing: 0.3em;
 }
 
 @media only screen and (max-width: 70em) {
@@ -442,11 +590,12 @@ a:active {
 
 .quote {
     background: url(../images/quotebg.jpg) no-repeat center center;
-    font-size: 3em;
+    background-size: cover;
     text-align: center;
 }
 
 .quote p {
+    font-size: 3em;
     padding: 2em;
     color: #fff;
     font-weight: 200;
@@ -498,14 +647,22 @@ a:active {
 }
 
 @media only screen and (max-width: 40em) {
+    .quote p {
+        font-size: 2em;
+        padding: 3em 1em 3em 1em;
+        color: #fff;
+        font-weight: 200;
+        background-color:  rgba(23, 22, 19, 0.9);
+    }
     
     .piece-text {
         padding: 2em 2em 0 2em;
+        border-right: none;
     }
 
     .piece-text-border {
         text-align: center;
-        border-left: none;
+        border: none;
     }
     
     .piece-text-border ul {
