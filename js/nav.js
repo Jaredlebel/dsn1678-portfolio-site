@@ -17,10 +17,10 @@
 		}
 	});
 
-var $quoteSection = $('.quote-section');
+var $facts = $('.facts');
+var $factsWrap = $('.facts-wrap')
 
-$win.on('scroll', function() {
-    var scrollPos = $win.scrollTop();
-    
-    $quoteSection.css('background-position', 'center ' + scrollPos / 2 + 'px');
-});
+$facts.waypoint(function() {
+    $facts.toggleClass('facts-sticky')
+    $factsWrap.toggleClass('facts-wrap-sticky')
+},{offset:'5em'});
