@@ -605,6 +605,39 @@ a:active {
     padding: 0 0.2em;
 }
 
+.folio-contact {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    background: url(../images/contact.jpg) no-repeat center center;
+    background-size: cover;
+    line-height: 1.2em;
+    padding: 4em 0 3em 0;
+}
+
+.folio-contact h3 {
+    color: #000;
+    font-weight: 800;
+    text-align: center;
+    font-size: 3em;
+    line-height: 0.5em;
+}
+
+.folio-contact p {
+    font-size: 2em;
+    text-align: center;
+}
+
+.folio-contact ul {
+    text-align: center;
+}
+
+.folio-contact ul li {
+    width: 60px;
+    display: inline-block;
+    padding: 0 0.2em;
+}
+
 .quote {
     position: relative;
     z-index: 1001;
