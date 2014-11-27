@@ -35,7 +35,7 @@ html {
 }
 
 header {
-    font-family: 'Helvetica' sans-serif;
+    font-family: 'Edo', sans-serif;
     font-size: 1em;
     letter-spacing: 0.2em;
     position: fixed;
@@ -187,7 +187,7 @@ hr {
 }
 
 .facts-wrap-sticky {
-    height: 26.75em;
+    height: 17em;
 }
 
 .facts-list {
@@ -209,7 +209,6 @@ hr {
 
 .facts-sticky {
     position: fixed;
-    top: 5.5em;
     width: 100%;
 }
 
@@ -291,19 +290,19 @@ hr {
         padding: 0.5em 0 0.9em 0;
     }
     
-    @-webkit-keyframes facts {
-    0% { margin-top: 0; }
-    18% { margin-top: 0; }
-    20% { margin-top: -10rem; }
-    38% { margin-top: -10rem; }
-    40% { margin-top: -20rem; }
-    58% { margin-top: -20rem; }
-    60% { margin-top: -30rem; }
-    78% { margin-top: -30rem; }
-    80% { margin-top: -40rem; }
-    98% { margin-top: -40rem; }
-    100% { margin-top: 0rem; }
-}
+        @-webkit-keyframes facts {
+        0% { margin-top: 0; }
+        18% { margin-top: 0; }
+        20% { margin-top: -10rem; }
+        38% { margin-top: -10rem; }
+        40% { margin-top: -20rem; }
+        58% { margin-top: -20rem; }
+        60% { margin-top: -30rem; }
+        78% { margin-top: -30rem; }
+        80% { margin-top: -40rem; }
+        98% { margin-top: -40rem; }
+        100% { margin-top: 0rem; }
+        }
 }
 
 .logo {
@@ -314,35 +313,35 @@ hr {
 }
 
 h1 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Edo', sans-serif;
     font-weight: 800;
     font-size: 3em;
     line-height: 1.4em;
 }
 
 h2 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Edo', sans-serif;
     font-weight: 800;    
     font-size: 2em;
     line-height: 1.4em;
 }
 
 h3 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Edo', sans-serif;
     font-weight: 800;
     font-size: 1.5em;
     line-height: 1.4em;
 }
 
 h4 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Edo', sans-serif;
     font-weight: 800;
     font-size: 1.2em;
     line-height: 1.4em;
 }
 
 h5 {
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Edo', sans-serif;
     font-weight: 800;
     font-size: 1em;
     line-height: 1.5em;
@@ -441,7 +440,8 @@ a:active {
     position: relative;
 }
 
-.banner img {
+.banner-img {
+    position: relative;
     background-size: cover;
     display: block;
     width: 100%;
@@ -529,6 +529,7 @@ a:active {
 .about {
     background-color: #fff;
     background: url(../images/about-bg.jpg) no-repeat center center;
+    background-size: cover;
     text-align: center;
     position: relative;
     color: #fff;
@@ -620,6 +621,7 @@ a:active {
 }
 
 .contact p {
+    color: #fff;
     font-size: 2em;
     text-align: center;
 }
@@ -675,7 +677,7 @@ a:active {
     background: url(../images/quotebg.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
-    margin-bottom: 17.75em;
+    margin-bottom: 17em;
 }
 
 .quote p {
@@ -683,7 +685,6 @@ a:active {
     padding: 2em;
     color: #fff;
     font-weight: 200;
-    background-color:  rgba(23, 22, 19, 0.9);
 }
 
 .quote-section {

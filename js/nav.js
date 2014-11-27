@@ -18,20 +18,30 @@ var navTop = document.querySelector('.nav-top');
 
 
 var $win = $(window);
-var $aboutSection = $('.about');
+var $bannerText = $('.banner-text');
+var $bannerImg = $('.banner-img');
 
     $win.on('scroll', function() {
         var scrollPos = $win.scrollTop();
 
-        $aboutSection.css('margin-top', '-' + scrollPos/2 + 'px');
-
+        $bannerText.css('margin-top', '' + scrollPos/3 + 'px');
+        $bannerImg.css('top', '' + scrollPos/3 + 'px');
     });
 
 
 var $facts = $('.facts');
 var $factsWrap = $('.facts-wrap')
+var $navBar = $('.nav-bar')
 
-    $facts.waypoint(function() {
-        $facts.toggleClass('facts-sticky')
-        $factsWrap.toggleClass('facts-wrap-sticky')
-    },{offset:'5.5em'});
+
+    $factsWrap.waypoint(function(direction) {
+        if(direction =='down'){
+            $facts.addClass('facts-sticky').css('top',$navBar.outerHeight())
+            $factsWrap.addClass('facts-wrap-sticky')
+        }else{
+            $facts.removeClass('facts-sticky').css('top',0)
+            $factsWrap.removeClass('facts-wrap-sticky')
+        }
+    },{offset:function(){
+        return $navBar.outerHeight()
+    }});
