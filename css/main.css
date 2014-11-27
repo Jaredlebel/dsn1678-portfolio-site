@@ -187,7 +187,7 @@ hr {
 }
 
 .facts-wrap-sticky {
-    height: 17em;
+    height: 22em;
 }
 
 .facts-list {
@@ -288,6 +288,10 @@ hr {
     .facts ul li {
         font-size: 1.2em;
         padding: 0.5em 0 0.9em 0;
+    }
+    
+    .facts-wrap-sticky {
+        height: 17em;
     }
     
         @-webkit-keyframes facts {
@@ -736,7 +740,6 @@ a:active {
         padding: 3em 1em 3em 1em;
         color: #fff;
         font-weight: 200;
-        background-color:  rgba(23, 22, 19, 0.9);
     }
     
     .piece-text {

@@ -25,7 +25,7 @@ var $bannerImg = $('.banner-img');
         var scrollPos = $win.scrollTop();
 
         $bannerText.css('margin-top', '' + scrollPos/3 + 'px');
-        $bannerImg.css('top', '' + scrollPos/3 + 'px');
+        $bannerImg.css('top', '' + scrollPos/2 + 'px');
     });
 
 
