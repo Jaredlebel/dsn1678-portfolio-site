@@ -23,4 +23,4 @@ var $factsWrap = $('.facts-wrap')
 $facts.waypoint(function() {
     $facts.toggleClass('facts-sticky')
     $factsWrap.toggleClass('facts-wrap-sticky')
-},{offset:'5em'});
+},{offset:'5.5em'});
