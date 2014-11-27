@@ -169,16 +169,6 @@ hr {
     margin: auto;
 }
 
-.explore {
-    background: transparent url(../images/explore.jpg) no-repeat center center;
-    background-size: cover;
-}
-
-.human {
-    background: transparent url(../images/humanbg.jpg) no-repeat center center;
-    background-size: cover;
-}
-
 .facts {
     position: relative;
     background-color: rgba(164, 152, 65, 1);
@@ -286,18 +276,32 @@ hr {
 
 @media only screen and (max-width: 55em) {
     .facts {
-        padding: 5em 10% 3em 10%;
+        padding: 3em 2% 3em 2%;
     }
     
     .facts ul { 
-        height: 4em;
+        height: 5.5em;
         overflow: hidden;
     }
     
     .facts ul li {
-        font-size: 2em;
+        font-size: 1.2em;
         padding: 0.5em 0 0.9em 0;
     }
+    
+    @-webkit-keyframes facts {
+    0% { margin-top: 0; }
+    18% { margin-top: 0; }
+    20% { margin-top: -10rem; }
+    38% { margin-top: -10rem; }
+    40% { margin-top: -20rem; }
+    58% { margin-top: -20rem; }
+    60% { margin-top: -30rem; }
+    78% { margin-top: -30rem; }
+    80% { margin-top: -40rem; }
+    98% { margin-top: -40rem; }
+    100% { margin-top: 0rem; }
+}
 }
 
 .logo {
@@ -385,12 +389,12 @@ p {
 
     p {
         text-align: center;
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     .p-big {
         text-align: center;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 }
 
@@ -443,9 +447,9 @@ a:active {
 }
 
 .banner-text {
-    padding: 0 6em 0 6em;
+    padding: 4em 6em 0 6em;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 0;
     right: 0;
 }
@@ -454,16 +458,17 @@ a:active {
     text-align: center;
     line-height: 1em;
     font-size: 8em;
-    color: #fff;
+    color: #000;
     font-weight: 800;
 }
 
 .ban-btn {
+    background-color: rgba(164, 152, 65, 0.5); 
     font-size: 1em;
     padding: 0.3em;
     font-weight: 200;
     text-align: center;
-    color: #a49841;
+    color: #fff;
     border: solid 2px #a49841;
     width: 240px;
     margin: 1em auto;
@@ -472,7 +477,7 @@ a:active {
 
 .ban-btn:hover {
     background-color: #a49841;
-    color: #fff;
+    color: #c6ba62;
     transition: all 400ms ease;
     -webkit-transition: all 400ms ease;
 }
@@ -480,18 +485,7 @@ a:active {
 @media only screen and (max-width: 70em) {
     
     .banner-text {
-    top: 40%;
-    }
-    
-   .banner-text h1 {
-    font-size: 6em;
-   }
-} 
-
-@media only screen and (max-width: 50em) {
-    
-    .banner-text {
-    top: 40%;
+    top: 50%;
     }
     
    .banner-text h1 {
@@ -499,29 +493,48 @@ a:active {
    }
 } 
 
+@media only screen and (max-width: 50em) {
+    
+    .banner-text {
+    top: 50%;
+    }
+    
+   .banner-text h1 {
+    font-size: 4em;
+   }
+} 
+
 @media only screen and (max-width: 42em) {
     
     .banner-text {
         padding: 0 3em 0 3em;
-        top: 45%;
+        top: 55%;
     }
     
    .banner-text h1 {
-        font-size: 3em;
+        font-size: 2.5em;
    }
 } 
 
 .about {
+    text-align: center;
     border-top: solid 4px;
     position: relative;
     z-index: 501;
     background-color: #fff;
-    padding: 4rem 12% 4rem 12%;
+    padding: 4rem 20% 4rem 20%;
 }
 
 .about-img {
-    padding: 0 0 0 2em;
+    max-width: 70%;
+    margin: 1em auto 1em auto;
 }
+
+@media only screen and (max-width: 42em) {
+    .about {
+       padding: 2rem 5% 2rem 5%;
+    }
+} 
 
 .folio {
     position: relative;
@@ -659,34 +672,21 @@ a:active {
     padding-top: 4.5em;
 }
 
-.piece-nav {
-    text-align: center;
-    margin: 0  auto;
-}
-
-.piece-nav li {
-    display: inline-block;
-}
-
 .piece-text {
     background-color: #fff;
     color: #000;
-    padding: 6em 10em 6em 10em;
-    border-bottom: solid 2px;
-    border-right: solid 1px;
+    padding: 3em 20% 2em 20%;
 }
 
 .piece-text-border {
+    text-align: center;
     background-color: #fff;
     color: #000;
-    padding: 6em 2em 6em 2em;
-    border-left: solid 1px;
-    border-bottom: solid 2px;
+    padding-bottom: 2em;
 }
 
 .piece-text-border a {
     color: #a49841;
-    border-bottom: solid 2px #a49841;
 }
 
 .piece-text-border a:hover {
@@ -698,7 +698,15 @@ a:active {
     width: 40px;
 }
 
-@media only screen and (max-width: 40em) {
+.piece-nav {
+    margin: 0  auto;
+}
+
+.piece-nav li {
+    display: inline-block;
+}
+
+@media only screen and (max-width: 70em) {
     .quote p {
         font-size: 2em;
         padding: 3em 1em 3em 1em;
@@ -709,12 +717,10 @@ a:active {
     
     .piece-text {
         padding: 2em 2em 0 2em;
-        border-right: none;
     }
 
     .piece-text-border {
         text-align: center;
-        border: none;
     }
     
     .piece-text-border ul {
