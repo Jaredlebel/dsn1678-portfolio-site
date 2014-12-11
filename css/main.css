@@ -676,9 +676,18 @@ a:active {
 
 .quote p {
     font-family: 'Edo' sans-serif;
-    font-size: 4em;
-    padding: 1em 3em 1em 3em;
+    font-size: 3.5em;
+    padding: 1.2em 4em 0 4em;
     color: #fff;
+    line-height: 1.4em;
+}
+
+.quote h5 {
+    font-family: 'Edo' sans-serif;
+    font-size: 2em;
+    padding: 1em;
+    color: #2e2e2e;
+    padding-bottom: 2.5em;
     line-height: 1.4em;
 }
 
