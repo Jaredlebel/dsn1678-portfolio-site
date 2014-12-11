@@ -5,7 +5,6 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-    background: url(../images/texture.jpg) no-repeat center center;
     background-size: cover;
     box-sizing: border-box;
     margin: 0;
@@ -173,8 +172,8 @@ hr {
 
 .facts {
     position: relative;
-    background-color: rgba(164, 152, 65, 1);
-    color: #000;
+    background-color: #fff;
+    color: rgba(164, 152, 65, 1);
     padding: 6em 0 6em 0;
     text-align: center;
     z-index: 1000;
@@ -192,9 +191,9 @@ hr {
 
 .facts-list {
     position: relative;
-    color: #fff;
+    color: #000;
     height: 8rem;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     overflow: hidden;
@@ -202,7 +201,7 @@ hr {
 
 .facts-outside {
     width: 100%;
-    font-size: 2em;
+    font-size: 4em;
     line-height: 8rem;
     padding: 0;
 }
@@ -277,6 +276,7 @@ hr {
 
 @media only screen and (max-width: 55em) {
     .facts {
+        display: none;
         padding: 3em 2% 3em 2%;
     }
     
@@ -296,15 +296,6 @@ hr {
     
         @-webkit-keyframes facts {
         0% { margin-top: 0; }
-        18% { margin-top: 0; }
-        20% { margin-top: -10rem; }
-        38% { margin-top: -10rem; }
-        40% { margin-top: -20rem; }
-        58% { margin-top: -20rem; }
-        60% { margin-top: -30rem; }
-        78% { margin-top: -30rem; }
-        80% { margin-top: -40rem; }
-        98% { margin-top: -40rem; }
         100% { margin-top: 0rem; }
         }
 }
@@ -361,7 +352,7 @@ p {
 
 .p-big {
     font-weight: 300;
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.7em;
 }
 
@@ -585,7 +576,7 @@ a:active {
 }
 
 .folio:hover .folio-info {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .folio h2 {
@@ -685,10 +676,11 @@ a:active {
 }
 
 .quote p {
-    font-size: 3em;
-    padding: 2em;
+    font-family: 'Edo' sans-serif;
+    font-size: 4em;
+    padding: 1em 3em 1em 3em;
     color: #fff;
-    font-weight: 200;
+    line-height: 1.4em;
 }
 
 .quote-section {
