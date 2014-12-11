@@ -457,6 +457,65 @@ a:active {
     font-weight: 800;
 }
 
+@-webkit-keyframes slide-in-left {
+    0% {
+        transform: translateX(-100em);
+        -webkit-transform: translateX(-100em);
+        opacity: 0;
+    }
+    
+    100% {
+        letter-spacing: 0;
+        transform: translateX(0);
+        -webkit-transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes slide-in-right {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+.left {
+    animation: slide-in-left 1.5s ease-in-out forwards;
+    -webkit-animation: slide-in-left 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0;
+}
+
+.right {
+    animation: slide-in-right 1.5s ease-in-out forwards;
+    -webkit-animation: slide-in-right 1.5s ease-in-out forwards;
+    opacity: 0;
+    animation-delay: 0;
+}
+
+.delay-1 {
+    animation-delay: 0.3;
+    -webkit-animation-delay: 0.3s;
+}
+
+.delay-2 {
+    animation-delay: 0.6s;
+    -webkit-animation-delay: 0.6s;
+}
+
+.delay-3 {
+    animation-delay: 0.8s;
+    -webkit-animation-delay: 0.8s;
+}
+
+.delay-4 {
+    animation-delay: 0.9s;
+    -webkit-animation-delay: 0.9s;
+}
+
 .ban-btn {
     background-color: rgba(164, 152, 65, 0.5); 
     font-size: 1em;
