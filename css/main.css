@@ -820,9 +820,18 @@ a:active {
 @media only screen and (max-width: 70em) {
     .quote p {
         font-size: 2em;
-        padding: 3em 1em 3em 1em;
+        padding: 2em 1em 0 1em;
         color: #fff;
         font-weight: 200;
+    }
+    
+    .quote h5 {
+        font-family: 'Edo' sans-serif;
+        font-size: 1.2em;
+        padding: 1em;
+        color: #2e2e2e;
+        padding-bottom: 2.5em;
+        line-height: 1.4em;
     }
     
     .piece {
