@@ -212,65 +212,65 @@ hr {
 }
 
 .facts-mover {
-    -webkit-animation: facts 8400ms linear forwards infinite;
-    -moz-animation: facts 8400ms linear forwards infinite;
-    -o-animation: facts 8400ms linear forwards infinite;
-    animation: facts 8400ms linear forwards infinite;
+    -webkit-animation: facts 12000ms ease forwards infinite;
+    -moz-animation: facts 12000ms ease forwards infinite;
+    -o-animation: facts 12000ms ease forwards infinite;
+    animation: facts 12000ms ease forwards infinite;
 }
 
 @-webkit-keyframes facts {
     0% { margin-top: 0; }
-    18% { margin-top: 0; }
+    18.5% { margin-top: 0; }
     20% { margin-top: -8rem; }
-    38% { margin-top: -8rem; }
+    38.5% { margin-top: -8rem; }
     40% { margin-top: -16rem; }
-    58% { margin-top: -16rem; }
+    58.5% { margin-top: -16rem; }
     60% { margin-top: -24rem; }
-    78% { margin-top: -24rem; }
+    78.5% { margin-top: -24rem; }
     80% { margin-top: -32rem; }
-    98% { margin-top: -32rem; }
+    98.5% { margin-top: -32rem; }
     100% { margin-top: 0rem; }
 }
 
 @-moz-keyframes facts {
     0% { margin-top: 0; }
-    18% { margin-top: 0; }
+    19.5% { margin-top: 0; }
     20% { margin-top: -8rem; }
-    38% { margin-top: -8rem; }
+    39.5% { margin-top: -8rem; }
     40% { margin-top: -16rem; }
-    58% { margin-top: -16rem; }
+    59.5% { margin-top: -16rem; }
     60% { margin-top: -24rem; }
-    78% { margin-top: -24rem; }
+    79.5% { margin-top: -24rem; }
     80% { margin-top: -32rem; }
-    98% { margin-top: -32rem; }
+    99.5% { margin-top: -32rem; }
     100% { margin-top: 0rem; }
 }
 
 @-o-keyframes facts {
     0% { margin-top: 0; }
-    18% { margin-top: 0; }
+    19.5% { margin-top: 0; }
     20% { margin-top: -8rem; }
-    38% { margin-top: -8rem; }
+    39.5% { margin-top: -8rem; }
     40% { margin-top: -16rem; }
-    58% { margin-top: -16rem; }
+    59.5% { margin-top: -16rem; }
     60% { margin-top: -24rem; }
-    78% { margin-top: -24rem; }
+    79.5% { margin-top: -24rem; }
     80% { margin-top: -32rem; }
-    98% { margin-top: -32rem; }
+    99.5% { margin-top: -32rem; }
     100% { margin-top: 0rem; }
 }
 
 @keyframes facts {
     0% { margin-top: 0; }
-    18% { margin-top: 0; }
+    19.5% { margin-top: 0; }
     20% { margin-top: -8rem; }
-    38% { margin-top: -8rem; }
+    39.5% { margin-top: -8rem; }
     40% { margin-top: -16rem; }
-    58% { margin-top: -16rem; }
+    59.5% { margin-top: -16rem; }
     60% { margin-top: -24rem; }
-    78% { margin-top: -24rem; }
+    79.5% { margin-top: -24rem; }
     80% { margin-top: -32rem; }
-    98% { margin-top: -32rem; }
+    99.5% { margin-top: -32rem; }
     100% { margin-top: 0rem; }
 }
 
@@ -529,7 +529,7 @@ a:active {
     position: relative;
     color: #fff;
     z-index: 501;
-    padding: 4rem 20% 4rem 20%;
+    padding: 3rem 24% 3rem 24%;
     box-shadow: 0 -2px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -539,8 +539,10 @@ a:active {
 }
 
 .about h2 {
-    font-size: 2em;
-    padding: 0.5em 2em 0 2em;
+    color: #a49841;
+    font-size: 4em;
+    line-height: 1.2em;
+    padding: 0 1em 0 1em;;
 }
 
 @media only screen and (max-width: 42em) {
@@ -562,7 +564,7 @@ a:active {
 
 .folio-info {
     text-align: center;
-    padding: 45% 0 50% 0;
+    padding: 37% 0 50% 0;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -583,7 +585,7 @@ a:active {
     color: #fff; 
     font-size: 1.7em;
     font-weight: 400;
-    margin: 0 2.7em 0 2.5em;
+    margin: 0 auto;
 }
 
 .folio ul li {
