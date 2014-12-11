@@ -538,7 +538,7 @@ a:active {
 
 @media only screen and (max-width: 70em) {
     .banner {
-        padding-top: 6em;
+        padding-top: 2.57em;
     }
     
     .banner-img {
