@@ -57,48 +57,59 @@
     
         <section class="nickjays piece unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
             <div class="grid">
-                <figure class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
-                    <img class="flex-img" src="http://lorempixel.com/400/400"/>
-                </figure>
-                <figure class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
-                    <img class="flex-img" src="http://lorempixel.com/500/500"/>
-                </figure>
-                <figure class="unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
-                    <img class="flex-img" src="http://lorempixel.com/600/600"/>
+                <figure class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+                    <img class="flex-img" src="images/nicksheridan-ban.jpg" alt="Nick Jays and Sheridan Grout's Logo"/>
                 </figure>
             </div>
+            
             <div class="grid">
-                <div class="piece-text unit unit-xs-1 unit-s-1 unit-m-2-3 unit-l-2-3">
-                    <H1>Nick Jays and Sheridan Grout</H1>
-                    <h5>Brand development · Logo Design</h5>
-                    <p class="big">Nick Jays and Sheridan Grout are local House and Techno DJs. They approached me with the idea to join forces and create a team identity with which they could promote themselves. The slick sound and deep grooves reminded me of the Miami club culture which steered my direction into a edgy Miami Vice look and feel. The geometric typography was hand rendered using a grid and precise angles, and a hell of a lot of Gestalt.</p> 
-                </div>
-                <div class="piece-text-border unit unit-xs-1 unit-s-1 unit-m-1-3 unit-l-1-3">
-                    <div class="unit unit-xs-1-2 unit-s-1-2 unit-m-1-2 unit-l-1-2">
-                        <ul class="grid">
-                            <li><a href="human.html"><img class="piece-nav flex-img" src="images/arrow-left.svg"/></a></li>
-                            <li><a href="russian-sleep-experiement.html"><img class="piece-nav flex-img" src="images/arrow-right.svg"/></a></li>
-                        </ul>
-                        </div>
-                        <H3>Collaborator</H3>
-                        <p><a href="http://www.meetdani.ca" target="_blank">Daniela Chavez.</a></p>
-                    </div>
-                </div>
-        </section>
-    
-        <section>
-            <div id="meet-me" class="folio-contact">
-                <p class="p-big">Get in touch!</p>
-                <p>hey@meetjared.ca</p>
-                <ul>
-                    <li><a href="https://twitter.com/JaredLebel" target="_blank"><img src="images/social-twitter.svg" alt="cat"></a></li>
-                    <li><a href="ca.linkedin.com/in/jaredlebel/" target="_blank"><img src="images/social-linkedin.svg" alt="cat"></a></li>
-                    <li><a href="https://www.behance.net/jaredlebel" target="_blank"><img src="images/social-behance.svg" alt="cat"></a></li>
-                    <li><a href="http://instagram.com/meetjared" target="_blank"><img src="images/social-instagram.svg" alt="cat"></a></li>
+        <div class="piece-text unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+            <H1>Nick Jays and Sheridan Grout</H1>
+            <h5>Creative Direction · Branding · Logo Design</h5>
+            <p class="p-big">Nick Jays and Sheridan Grout are local House and Techno DJs. They approached me with the idea to join forces and create a team identity with which they could promote themselves. The slick sound and deep grooves reminded me of the Miami club culture which steered my direction into a edgy Miami Vice look and feel. The geometric typography was hand rendered using a grid and precise angles, and a hell of a lot of Gestalt.</p>
+        </div>
+        <div class="piece-text-border unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1">
+            <div class="unit unit-xs-11 unit-s-1 unit-m-1 unit-l-1">
+                <ul class="piece-nav">
+                    <li><a href="cell-eti.html"><img class="piece-nav flex-img" src="images/arrow-left.svg"/></a></li>
+                    <li><a href="human.html"><img class="piece-nav flex-img" src="images/arrow-right.svg"/></a></li>
                 </ul>
+                </div>
             </div>
-        </section>
+        </div>
+</section>
+
+<section role="contentinfo">
+    <div id="meet-me" class="folio-contact">
+        <h3 class="p-big">Get in touch!</h3>
+        <p>hey@meetjared.ca</p>
+        <ul>
+            <li><a href="https://twitter.com/JaredLebel" target="_blank"><img src="images/social-twitter.svg" alt="Jared Lebel's Twitter"></a></li>
+            <li><a href="ca.linkedin.com/in/jaredlebel/" target="_blank"><img src="images/social-linkedin.svg" alt="Jared Lebel's LinkedIn"></a></li>
+            <li><a href="https://www.behance.net/jaredlebel" target="_blank"><img src="images/social-behance.svg" alt="Jared Lebel's Behance"></a></li>
+            <li><a href="http://instagram.com/meetjared" target="_blank"><img src="images/social-instagram.svg" alt="Jared Lebel's Instagram"></a></li>
+        </ul>
+        <p class="small">Copyright © 2015 Jared Lebel</p>
+    </div>
+</section>
         
+<script src="js/waypoints.min.js"></script>
+     <script>
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+              }
+            }
+          });
+        });
+    </script>
 <script src="js/nav.js"></script>
 </body>
 </html>
