@@ -436,8 +436,6 @@ a:active {
 }
 
 .banner-img {
-    position: relative;
-    background-size: cover;
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -480,6 +478,17 @@ a:active {
 }
 
 @media only screen and (max-width: 70em) {
+    .banner {
+        padding-top: 6em;
+    }
+    
+    .banner-img {
+        background-position: center center;
+        position: relative;
+        background-size: cover;
+        width: 100%;
+        margin: 0 auto;
+    }
     
     .banner-text {
     top: 50%;
@@ -545,7 +554,7 @@ a:active {
     padding: 0 1em 0 1em;;
 }
 
-@media only screen and (max-width: 42em) {
+@media only screen and (max-width: 70em) {
     .about {
        padding: 2rem 5% 2rem 5%;
     }
@@ -553,6 +562,12 @@ a:active {
     .about-img {
         max-width: 40%;
         margin: 1em auto 1em auto;
+    }
+    
+    .about h2 {
+        font-size: 2em;
+        line-height: 1.2em;
+        padding: 0 1em 0 1em;;
     }
 } 
 
