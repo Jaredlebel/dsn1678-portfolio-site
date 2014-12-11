@@ -604,7 +604,7 @@ a:active {
     background: url(../images/contact.jpg) no-repeat center center;
     background-size: cover;
     line-height: 1.2em;
-    padding: 4em 0 3em 0;
+    padding: 1em;
 }
 
 .contact h3 {
@@ -612,15 +612,14 @@ a:active {
     font-weight: 800;
     text-align: center;
     font-size: 3em;
-    line-height: 0.5em;
+    line-height: 2em;
 }
 
 .contact p {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
-
 
 .contact ul {
     text-align: center;
@@ -639,7 +638,7 @@ a:active {
     background: url(../images/contact.jpg) no-repeat center center;
     background-size: cover;
     line-height: 1.2em;
-    padding: 4em 0 3em 0;
+    padding: 1em;
 }
 
 .folio-contact h3 {
@@ -647,12 +646,12 @@ a:active {
     font-weight: 800;
     text-align: center;
     font-size: 3em;
-    line-height: 0.5em;
+    line-height: 2em;
 }
 
 .folio-contact p {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: center;
 }
 
@@ -672,7 +671,7 @@ a:active {
     background: url(../images/quotebg.jpg) no-repeat center center;
     background-size: cover;
     text-align: center;
-    margin-bottom: 17em;
+    margin-bottom: 18.9em;
 }
 
 .quote p {
@@ -724,6 +723,13 @@ a:active {
 
 .piece-nav li {
     display: inline-block;
+}
+
+.piece-text h5 {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    font-weight: 200;
+    padding-top: 0.5em; 
 }
 
 @media only screen and (max-width: 70em) {
